@@ -17,15 +17,10 @@ const connect = function() {
     conn.write("Name: DDI");
   });
 
-  //sends a command to move up to the server after the connection is established;
-  // conn.on("connect", () => {
-  //   conn.write("Move: up");
-  // });
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-  //event handler: handles incoming data and console.log it for the player
+  //event handler: handles incoming data from the server and console.log it for the player
   conn.on("data", (data) => {
     console.log("Server says: ", data);
   });
