@@ -40,6 +40,26 @@ const handleUserInput = function(key) {
   if (key === 'd') {
     connection.write("Move: right");
   }
+
+  //send "Hello" message if "h" is pressed
+  if (key === 'h') {
+    connection.write("Say: Hello!");
+  }
+
+  //send "Oops!" message if "o" is pressed
+  if (key === 'o') {
+    connection.write("Say: Oops!");
+  }
+
+  //send "Buy!" message if "b" is pressed
+  if (key === 'b') {
+    connection.write("Say: Buy!");
+  }
+
+  //send "Yummy!" message if "y" is pressed
+  if (key === 'y') {
+    connection.write("Say: Yummy!");
+  }
 };
 
 module.exports = { setupInput };
