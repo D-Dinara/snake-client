@@ -5,7 +5,7 @@ const MOVE_UP_KEY = "w";
 const MOVE_DOWN_KEY = "s";
 const MOVE_LEFT_KEY = "a";
 const MOVE_RIGHT_KEY = "d";
-const EXIT = "\u0003";
+const EXIT = "\u0003"; //ctrl+c
 const USER_MESSAGES = {
   h: "Hello!", //"Hello" if "h" is pressed
   o: "Oops!", //"Oops!" if "o" is pressed
