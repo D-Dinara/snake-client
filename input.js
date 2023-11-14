@@ -17,27 +17,27 @@ const setupInput = (conn) => {
 // the function takes in a key pressed on the keyboard and sends the appropriate command to the server
 const handleUserInput = function(key) {
 
-  //terminate the program if ctrl+c is pressed
+  //terminate the program if corresponding key is pressed
   if (key === EXIT) {
     process.exit();
   }
 
-  //send "move up" command to the server if "w" is pressed
+  //send "move up" command to the server if corresponding key  is pressed
   if (key === MOVE_UP_KEY) {
     connection.write("Move: up");
   }
 
-  //send "move left" command to the server if "a" is pressed
+  //send "move left" command to the server if corresponding key  is pressed
   if (key === MOVE_LEFT_KEY) {
     connection.write("Move: left");
   }
 
-  //send "move down" command to the server if "s" is pressed
+  //send "move down" command to the server if corresponding key is pressed
   if (key === MOVE_DOWN_KEY) {
     connection.write("Move: down");
   }
 
-  //send "move right" command to the server if "d" is pressed
+  //send "move right" command to the server if corresponding key is pressed
   if (key === MOVE_RIGHT_KEY) {
     connection.write("Move: right");
   }
